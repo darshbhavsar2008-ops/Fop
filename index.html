@@ -185,1139 +185,537 @@ pre code { font: inherit; }
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 
-/* CodeLab design system reference: spacing and component states. */
-/* --- SPACING TOKENS --- */
-/* spacing: 0 — documented design-system scale entry. */
-/* spacing: 1 — documented design-system scale entry. */
-/* spacing: 2 — documented design-system scale entry. */
-/* spacing: 3 — documented design-system scale entry. */
-/* spacing: 4 — documented design-system scale entry. */
-/* spacing: 5 — documented design-system scale entry. */
-/* spacing: 6 — documented design-system scale entry. */
-/* spacing: 8 — documented design-system scale entry. */
-/* spacing: 10 — documented design-system scale entry. */
-/* spacing: 12 — documented design-system scale entry. */
-/* spacing: 16 — documented design-system scale entry. */
-/* spacing: 20 — documented design-system scale entry. */
-/* spacing: 24 — documented design-system scale entry. */
-/* spacing: 28 — documented design-system scale entry. */
-/* spacing: 32 — documented design-system scale entry. */
-/* spacing: 40 — documented design-system scale entry. */
-/* spacing: 48 — documented design-system scale entry. */
-/* spacing: 56 — documented design-system scale entry. */
-/* spacing: 64 — documented design-system scale entry. */
-/* spacing: 72 — documented design-system scale entry. */
-/* spacing: 80 — documented design-system scale entry. */
-/* spacing: 96 — documented design-system scale entry. */
-/* --- RADIUS TOKENS --- */
-/* radius: none — documented design-system scale entry. */
-/* radius: xs — documented design-system scale entry. */
-/* radius: sm — documented design-system scale entry. */
-/* radius: md — documented design-system scale entry. */
-/* radius: lg — documented design-system scale entry. */
-/* radius: xl — documented design-system scale entry. */
-/* radius: 2xl — documented design-system scale entry. */
-/* radius: 3xl — documented design-system scale entry. */
-/* radius: full — documented design-system scale entry. */
-/* --- MOTION TOKENS --- */
-/* motion: instant — documented design-system scale entry. */
-/* motion: quick — documented design-system scale entry. */
-/* motion: standard — documented design-system scale entry. */
-/* motion: relaxed — documented design-system scale entry. */
-/* motion: slow — documented design-system scale entry. */
-/* --- OPACITY TOKENS --- */
-/* opacity: 0 — documented design-system scale entry. */
-/* opacity: 5 — documented design-system scale entry. */
-/* opacity: 10 — documented design-system scale entry. */
-/* opacity: 15 — documented design-system scale entry. */
-/* opacity: 20 — documented design-system scale entry. */
-/* opacity: 25 — documented design-system scale entry. */
-/* opacity: 30 — documented design-system scale entry. */
-/* opacity: 40 — documented design-system scale entry. */
-/* opacity: 50 — documented design-system scale entry. */
-/* opacity: 60 — documented design-system scale entry. */
-/* opacity: 70 — documented design-system scale entry. */
-/* opacity: 80 — documented design-system scale entry. */
-/* opacity: 90 — documented design-system scale entry. */
-/* opacity: 100 — documented design-system scale entry. */
-/* --- Z-INDEX TOKENS --- */
-/* z-index: base — documented design-system scale entry. */
-/* z-index: raised — documented design-system scale entry. */
-/* z-index: sticky — documented design-system scale entry. */
-/* z-index: overlay — documented design-system scale entry. */
-/* z-index: modal — documented design-system scale entry. */
-/* z-index: toast — documented design-system scale entry. */
-/* --- TYPE-SCALE TOKENS --- */
-/* type-scale: xs — documented design-system scale entry. */
-/* type-scale: sm — documented design-system scale entry. */
-/* type-scale: base — documented design-system scale entry. */
-/* type-scale: lg — documented design-system scale entry. */
-/* type-scale: xl — documented design-system scale entry. */
-/* type-scale: 2xl — documented design-system scale entry. */
-/* type-scale: 3xl — documented design-system scale entry. */
-/* type-scale: 4xl — documented design-system scale entry. */
-/* type-scale: 5xl — documented design-system scale entry. */
-/* type-scale: 6xl — documented design-system scale entry. */
-/* --- SURFACE TOKENS --- */
-/* surface: base — documented design-system scale entry. */
-/* surface: subtle — documented design-system scale entry. */
-/* surface: muted — documented design-system scale entry. */
-/* surface: raised — documented design-system scale entry. */
-/* surface: floating — documented design-system scale entry. */
-/* surface: glass — documented design-system scale entry. */
-/* surface: glass-strong — documented design-system scale entry. */
-/* surface: inset — documented design-system scale entry. */
-/* --- STATE TOKENS --- */
-/* state: idle — documented design-system scale entry. */
-/* state: hover — documented design-system scale entry. */
-/* state: focus — documented design-system scale entry. */
-/* state: active — documented design-system scale entry. */
-/* state: selected — documented design-system scale entry. */
-/* state: disabled — documented design-system scale entry. */
-/* state: loading — documented design-system scale entry. */
-/* state: success — documented design-system scale entry. */
-/* state: warning — documented design-system scale entry. */
-/* state: error — documented design-system scale entry. */
-/* Reference 0001: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0002: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0003: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0004: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0005: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0006: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0007: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0008: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0009: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0010: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0011: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0012: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0013: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0014: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0015: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0016: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0017: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0018: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0019: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0020: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0021: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0022: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0023: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0024: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0025: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0026: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0027: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0028: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0029: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0030: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0031: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0032: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0033: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0034: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0035: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0036: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0037: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0038: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0039: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0040: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0041: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0042: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0043: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0044: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0045: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0046: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0047: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0048: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0049: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0050: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0051: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0052: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0053: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0054: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0055: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0056: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0057: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0058: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0059: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0060: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0061: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0062: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0063: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0064: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0065: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0066: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0067: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0068: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0069: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0070: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0071: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0072: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0073: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0074: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0075: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0076: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0077: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0078: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0079: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0080: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0081: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0082: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0083: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0084: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0085: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0086: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0087: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0088: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0089: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0090: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0091: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0092: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0093: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0094: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0095: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0096: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0097: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0098: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0099: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0100: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0101: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0102: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0103: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0104: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0105: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0106: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0107: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0108: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0109: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0110: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0111: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0112: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0113: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0114: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0115: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0116: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0117: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0118: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0119: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0120: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0121: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0122: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0123: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0124: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0125: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0126: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0127: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0128: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0129: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0130: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0131: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0132: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0133: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0134: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0135: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0136: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0137: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0138: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0139: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0140: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0141: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0142: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0143: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0144: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0145: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0146: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0147: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0148: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0149: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0150: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0151: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0152: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0153: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0154: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0155: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0156: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0157: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0158: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0159: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0160: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0161: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0162: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0163: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0164: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0165: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0166: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0167: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0168: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0169: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0170: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0171: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0172: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0173: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0174: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0175: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0176: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0177: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0178: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0179: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0180: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0181: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0182: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0183: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0184: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0185: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0186: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0187: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0188: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0189: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0190: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0191: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0192: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0193: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0194: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0195: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0196: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0197: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0198: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0199: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0200: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0201: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0202: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0203: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0204: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0205: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0206: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0207: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0208: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0209: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0210: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0211: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0212: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0213: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0214: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0215: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0216: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0217: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0218: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0219: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0220: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0221: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0222: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0223: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0224: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0225: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0226: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0227: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0228: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0229: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0230: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0231: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0232: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0233: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0234: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0235: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0236: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0237: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0238: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0239: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0240: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0241: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0242: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0243: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0244: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0245: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0246: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0247: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0248: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0249: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0250: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0251: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0252: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0253: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0254: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0255: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0256: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0257: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0258: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0259: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0260: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0261: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0262: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0263: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0264: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0265: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0266: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0267: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0268: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0269: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0270: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0271: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0272: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0273: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0274: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0275: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0276: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0277: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0278: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0279: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0280: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0281: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0282: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0283: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0284: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0285: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0286: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0287: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0288: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0289: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0290: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0291: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0292: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0293: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0294: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0295: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0296: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0297: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0298: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0299: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0300: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0301: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0302: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0303: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0304: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0305: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0306: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0307: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0308: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0309: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0310: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0311: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0312: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0313: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0314: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0315: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0316: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0317: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0318: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0319: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0320: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0321: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0322: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0323: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0324: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0325: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0326: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0327: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0328: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0329: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0330: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0331: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0332: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0333: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0334: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0335: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0336: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0337: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0338: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0339: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0340: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0341: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0342: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0343: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0344: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0345: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0346: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0347: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0348: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0349: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0350: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0351: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0352: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0353: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0354: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0355: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0356: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0357: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0358: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0359: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0360: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0361: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0362: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0363: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0364: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0365: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0366: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0367: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0368: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0369: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0370: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0371: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0372: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0373: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0374: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0375: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0376: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0377: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0378: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0379: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0380: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0381: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0382: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0383: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0384: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0385: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0386: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0387: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0388: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0389: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0390: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0391: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0392: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0393: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0394: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0395: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0396: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0397: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0398: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0399: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0400: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0401: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0402: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0403: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0404: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0405: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0406: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0407: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0408: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0409: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0410: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0411: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0412: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0413: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0414: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0415: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0416: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0417: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0418: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0419: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0420: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0421: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0422: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0423: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0424: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0425: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0426: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0427: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0428: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0429: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0430: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0431: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0432: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0433: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0434: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0435: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0436: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0437: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0438: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0439: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0440: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0441: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0442: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0443: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0444: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0445: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0446: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0447: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0448: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0449: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0450: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0451: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0452: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0453: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0454: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0455: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0456: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0457: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0458: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0459: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0460: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0461: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0462: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0463: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0464: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0465: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0466: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0467: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0468: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0469: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0470: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0471: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0472: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0473: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0474: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0475: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0476: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0477: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0478: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0479: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0480: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0481: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0482: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0483: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0484: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0485: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0486: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0487: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0488: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0489: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0490: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0491: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0492: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0493: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0494: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0495: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0496: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0497: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0498: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0499: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0500: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0501: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0502: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0503: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0504: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0505: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0506: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0507: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0508: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0509: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0510: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0511: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0512: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0513: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0514: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0515: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0516: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0517: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0518: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0519: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0520: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0521: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0522: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0523: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0524: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0525: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0526: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0527: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0528: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0529: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0530: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0531: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0532: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0533: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0534: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0535: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0536: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0537: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0538: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0539: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0540: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0541: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0542: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0543: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0544: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0545: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0546: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0547: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0548: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0549: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0550: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0551: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0552: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0553: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0554: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0555: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0556: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0557: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0558: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0559: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0560: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0561: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0562: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0563: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0564: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0565: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0566: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0567: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0568: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0569: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0570: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0571: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0572: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0573: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0574: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0575: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0576: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0577: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0578: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0579: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0580: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0581: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0582: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0583: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0584: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0585: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0586: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0587: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0588: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0589: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0590: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0591: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0592: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0593: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0594: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0595: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0596: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0597: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0598: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0599: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0600: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0601: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0602: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0603: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0604: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0605: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0606: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0607: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0608: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0609: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0610: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0611: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0612: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0613: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0614: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0615: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0616: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0617: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0618: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0619: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0620: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0621: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0622: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0623: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0624: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0625: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0626: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0627: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0628: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0629: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0630: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0631: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0632: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0633: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0634: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0635: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0636: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0637: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0638: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0639: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0640: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0641: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0642: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0643: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0644: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0645: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0646: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0647: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0648: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0649: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0650: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0651: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0652: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0653: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0654: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0655: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0656: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0657: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0658: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0659: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0660: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0661: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0662: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0663: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0664: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0665: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0666: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0667: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0668: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0669: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0670: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0671: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0672: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0673: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0674: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0675: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0676: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0677: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0678: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0679: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0680: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0681: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0682: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0683: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0684: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0685: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0686: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0687: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0688: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0689: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0690: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0691: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0692: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0693: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0694: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0695: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0696: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0697: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0698: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0699: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0700: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0701: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0702: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0703: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0704: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0705: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0706: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0707: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0708: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0709: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0710: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0711: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0712: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0713: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0714: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0715: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0716: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0717: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0718: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0719: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0720: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0721: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0722: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0723: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0724: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0725: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0726: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0727: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0728: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0729: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0730: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0731: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0732: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0733: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0734: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0735: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0736: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0737: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0738: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0739: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0740: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0741: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0742: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0743: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0744: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0745: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0746: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0747: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0748: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0749: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0750: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0751: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0752: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0753: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0754: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0755: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0756: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0757: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0758: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0759: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0760: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0761: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0762: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0763: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0764: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0765: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0766: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0767: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0768: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0769: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0770: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0771: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0772: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0773: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0774: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0775: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0776: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0777: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0778: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0779: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0780: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0781: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0782: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0783: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0784: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0785: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0786: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0787: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0788: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0789: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0790: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0791: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0792: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0793: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0794: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0795: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0796: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0797: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0798: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0799: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0800: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0801: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0802: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0803: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0804: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0805: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0806: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0807: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0808: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0809: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0810: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0811: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0812: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0813: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0814: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0815: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0816: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0817: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0818: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0819: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0820: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0821: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0822: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0823: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0824: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0825: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0826: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0827: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0828: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0829: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0830: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0831: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0832: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0833: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0834: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0835: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0836: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0837: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0838: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0839: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0840: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0841: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0842: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0843: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0844: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0845: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0846: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0847: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0848: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0849: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0850: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0851: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0852: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0853: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0854: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0855: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0856: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0857: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0858: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0859: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0860: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0861: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0862: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0863: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0864: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0865: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0866: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0867: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0868: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0869: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0870: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0871: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0872: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0873: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0874: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0875: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0876: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0877: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0878: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0879: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0880: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0881: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0882: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0883: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0884: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0885: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0886: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0887: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0888: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0889: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0890: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0891: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0892: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0893: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0894: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0895: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0896: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0897: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0898: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0899: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0900: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0901: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0902: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0903: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0904: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0905: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0906: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0907: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0908: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0909: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0910: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0911: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0912: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0913: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0914: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0915: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0916: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0917: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0918: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0919: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0920: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0921: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0922: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0923: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0924: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0925: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0926: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0927: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0928: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0929: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0930: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0931: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0932: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0933: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0934: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0935: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0936: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0937: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0938: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0939: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0940: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0941: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0942: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0943: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0944: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0945: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0946: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0947: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0948: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0949: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0950: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0951: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0952: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0953: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0954: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0955: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0956: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0957: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0958: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0959: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0960: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0961: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0962: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0963: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0964: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0965: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0966: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0967: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0968: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0969: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0970: modal / active — styling remains governed by the core component rules above. */
-/* Reference 0971: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 0972: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 0973: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 0974: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 0975: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0976: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 0977: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 0978: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 0979: toast / default — styling remains governed by the core component rules above. */
-/* Reference 0980: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 0981: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0982: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 0983: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 0984: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 0985: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 0986: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 0987: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0988: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 0989: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 0990: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 0991: hero / default — styling remains governed by the core component rules above. */
-/* Reference 0992: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 0993: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 0994: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 0995: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 0996: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 0997: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 0998: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 0999: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 1000: modal / active — styling remains governed by the core component rules above. */
-/* Reference 1001: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 1002: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 1003: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 1004: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 1005: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 1006: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 1007: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 1008: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 1009: toast / default — styling remains governed by the core component rules above. */
-/* Reference 1010: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 1011: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 1012: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 1013: program-card / compact — styling remains governed by the core component rules above. */
-/* Reference 1014: code-window / responsive — styling remains governed by the core component rules above. */
-/* Reference 1015: output-panel / default — styling remains governed by the core component rules above. */
-/* Reference 1016: filter-chip / hover — styling remains governed by the core component rules above. */
-/* Reference 1017: search-field / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 1018: metric-tile / active — styling remains governed by the core component rules above. */
-/* Reference 1019: toast / compact — styling remains governed by the core component rules above. */
-/* Reference 1020: modal / responsive — styling remains governed by the core component rules above. */
-/* Reference 1021: hero / default — styling remains governed by the core component rules above. */
-/* Reference 1022: glass-panel / hover — styling remains governed by the core component rules above. */
-/* Reference 1023: program-card / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 1024: code-window / active — styling remains governed by the core component rules above. */
-/* Reference 1025: output-panel / compact — styling remains governed by the core component rules above. */
-/* Reference 1026: filter-chip / responsive — styling remains governed by the core component rules above. */
-/* Reference 1027: search-field / default — styling remains governed by the core component rules above. */
-/* Reference 1028: metric-tile / hover — styling remains governed by the core component rules above. */
-/* Reference 1029: toast / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 1030: modal / active — styling remains governed by the core component rules above. */
-/* Reference 1031: hero / compact — styling remains governed by the core component rules above. */
-/* Reference 1032: glass-panel / responsive — styling remains governed by the core component rules above. */
-/* Reference 1033: program-card / default — styling remains governed by the core component rules above. */
-/* Reference 1034: code-window / hover — styling remains governed by the core component rules above. */
-/* Reference 1035: output-panel / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 1036: filter-chip / active — styling remains governed by the core component rules above. */
-/* Reference 1037: search-field / compact — styling remains governed by the core component rules above. */
-/* Reference 1038: metric-tile / responsive — styling remains governed by the core component rules above. */
-/* Reference 1039: toast / default — styling remains governed by the core component rules above. */
-/* Reference 1040: modal / hover — styling remains governed by the core component rules above. */
-/* Reference 1041: hero / focus-visible — styling remains governed by the core component rules above. */
-/* Reference 1042: glass-panel / active — styling remains governed by the core component rules above. */
-/* Reference 1043: p
+
+/* CodeLab v2: deeper liquid-glass finish and practical usability */
+:root { --line:rgba(196,218,255,.19); --shadow:0 28px 90px rgba(0,0,0,.36); }
+body { background-image:radial-gradient(ellipse at 50% -18%,rgba(108,242,255,.075),transparent 48%),linear-gradient(180deg,#080a16 0%,#0b0d1c 48%,#080a16 100%); }
+body::before { opacity:.38; filter:blur(105px); animation-duration:22s; }
+body::after { opacity:.27; filter:blur(110px); animation-duration:26s; }
+.glass { background:linear-gradient(132deg,rgba(255,255,255,.135),rgba(255,255,255,.035) 42%,rgba(139,159,255,.045)); border-color:rgba(255,255,255,.17); box-shadow:inset 0 1px 0 rgba(255,255,255,.11),var(--shadow); }
+.hero-card { isolation:isolate; border-color:rgba(255,255,255,.22); background:radial-gradient(ellipse at 12% 0%,rgba(108,242,255,.12),transparent 38%),radial-gradient(ellipse at 90% 100%,rgba(255,139,212,.10),transparent 40%),linear-gradient(135deg,rgba(255,255,255,.14),rgba(255,255,255,.035)); }
+.hero-card::before { border-color:rgba(255,255,255,.19); box-shadow:0 0 0 32px rgba(255,255,255,.035),0 0 0 64px rgba(255,255,255,.025),0 0 0 96px rgba(255,255,255,.014); }
+.gradient-text { background-size:220% auto; animation:gradientFlow 7s ease-in-out infinite; filter:drop-shadow(0 0 22px rgba(108,242,255,.12)); }
+.program-card { position:relative; isolation:isolate; border-color:rgba(255,255,255,.14); background:linear-gradient(145deg,rgba(255,255,255,.105),rgba(255,255,255,.025) 55%,rgba(142,120,255,.035)); box-shadow:inset 0 1px 0 rgba(255,255,255,.10),0 18px 55px rgba(0,0,0,.18); }
+.program-card::before { content:''; position:absolute; z-index:-1; inset:0 0 auto; height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,.42),transparent); opacity:.65; }
+.program-card:hover { transform:translateY(-6px); border-color:rgba(108,242,255,.36); box-shadow:inset 0 1px 0 rgba(255,255,255,.13),0 24px 65px rgba(0,0,0,.30),0 0 35px rgba(108,242,255,.045); }
+.code-window { border-color:rgba(180,200,255,.13); background:linear-gradient(180deg,rgba(2,5,15,.78),rgba(8,11,25,.68)); }
+.search-wrap { transition:border-color .25s,box-shadow .25s,transform .25s; }
+.search-wrap:focus-within { border-color:rgba(108,242,255,.42); box-shadow:0 0 0 4px rgba(108,242,255,.055),0 18px 60px rgba(0,0,0,.22); }
+.action-btn,.filter-btn,.copy-btn,.output-btn { transition:transform .2s ease,border-color .2s ease,background .2s ease,box-shadow .2s ease; }
+.action-btn:hover,.filter-btn:hover,.copy-btn:hover,.output-btn:hover { transform:translateY(-2px); }
+.action-btn.primary { box-shadow:0 8px 28px rgba(108,242,255,.10); }
+.number-chip { box-shadow:0 0 24px rgba(108,242,255,.08); }
+.output-panel { border-color:rgba(157,255,203,.24); background:linear-gradient(135deg,rgba(157,255,203,.075),rgba(157,255,203,.025)); }
+.reveal-section { transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1); }
+.program-card.is-hidden-reveal { opacity:0; transform:translateY(18px) scale(.99); }
+.program-card.is-revealed { opacity:1; transform:translateY(0) scale(1); }
+.back-top-fab { position:fixed; right:24px; bottom:24px; z-index:18; display:grid; place-items:center; width:48px; height:48px; border:1px solid rgba(255,255,255,.20); border-radius:17px; color:var(--cyan); background:rgba(15,19,40,.68); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); box-shadow:0 12px 40px rgba(0,0,0,.25); opacity:0; pointer-events:none; transform:translateY(10px); transition:opacity .25s,transform .25s; }
+.back-top-fab.visible { opacity:1; pointer-events:auto; transform:translateY(0); }
+@media (max-width:700px) { .toolbar-actions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); } .toolbar-actions .action-btn { justify-content:center; } .top-actions { gap:6px; } .top-actions .pill { font-size:.68rem; padding:8px 9px; } }
+@media (prefers-reduced-motion:reduce) { .gradient-text { animation:none; } .program-card.is-hidden-reveal { opacity:1; transform:none; } }
+
+</style>
+</head>
+<body id="top">
+<div class="page-shell">
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="CodeLab home"><span class="brand-mark">C/</span><span>CodeLab <span style="color:var(--cyan)">Practical</span></span></a>
+    <div class="top-actions"><span class="pill"><span class="status-dot"></span> Offline-friendly page</span><span class="pill">C language · Dev-C++</span></div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-card glass">
+        <div class="eyebrow">Your practical notebook, reimagined</div>
+        <h1><span class="gradient-text">Think in C.</span><br>Build the basics.</h1>
+        <p class="hero-copy">A clean, liquid-glass home for your programming practicals. Explore every question from your list, copy the C code, and reveal a sample output whenever you need it.</p>
+        <div class="hero-metrics"><div class="metric"><strong id="totalMetric">38</strong><span>practical programs</span></div><div class="metric"><strong>01–38</strong><span>your practical list</span></div><div class="metric"><strong>100%</strong><span>single-page access</span></div></div>
+      </div>
+    </section>
+    <section aria-label="Find programs">
+      <div class="toolbar">
+        <label class="search-wrap glass"><span class="search-icon" aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search by program, topic, or number…" aria-label="Search programs"><span class="pill" style="white-space:nowrap">⌘ / Ctrl K</span></label>
+        <div class="toolbar-actions"><button class="action-btn" id="expandAll">Show all outputs</button><button class="action-btn" id="collapseAll">Hide outputs</button><button class="action-btn" id="downloadAll">Download all code ↓</button><button class="action-btn primary" id="helpBtn">Quick guide ↗</button></div>
+      </div>
+      <nav class="filters" id="filters" aria-label="Filter by category"></nav>
+      <div class="section-heading"><div><h2>Practical library <span class="gradient-text">/ source code</span></h2><p>Exact aims from your photographed practical list, followed by C solutions.</p></div><span class="results-count" id="resultsCount">38 programs</span></div>
+      <div class="program-grid" id="programGrid"></div>
+      <div class="empty-state glass" id="emptyState"><div class="empty-icon">⌕</div><strong>No programs found</strong><p>Try another keyword or choose a different category.</p><button class="action-btn" id="clearSearch">Clear search</button></div>
+    </section>
+  </main>
+  <footer class="footer"><span><strong>CodeLab Practical</strong> · Made for learning C</span><span>Sample outputs are examples; your output changes with your input.</span><a class="back-top" href="#top">Back to top ↑</a></footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<button class="back-top-fab glass" id="backTopFab" type="button" aria-label="Back to top">↑</button>
+<div class="modal-backdrop" id="helpModal" role="dialog" aria-modal="true" aria-labelledby="helpTitle"><div class="modal glass"><button class="modal-close" id="closeHelp" aria-label="Close guide">✕</button><h3 id="helpTitle">A tiny guide to this page</h3><p>Everything lives in this single <code>index.html</code> file.</p><ul><li>Use the search box to find a practical by its title or number.</li><li>Use the category chips to focus on arrays, strings, loops, and more.</li><li>Press <strong>Copy code</strong> to copy a program into Dev-C++.</li><li>Press <strong>Show sample output</strong> to see an example run.</li><li>Use <strong>Download all code</strong> to save a combined text file of every practical.</li></ul><p><strong>Note:</strong> sample output is illustrative, not a live execution of the C program.</p></div></div>
+<script>
+const programs = [
+  {
+    "n": 1,
+    "title": "Print your address",
+    "category": "Basic Input / Output",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    printf(\"Your Address: Ahmedabad, Gujarat, India\\n\");\n    return 0;\n}",
+    "output": "Your Address: Ahmedabad, Gujarat, India"
+  },
+  {
+    "n": 2,
+    "title": "Average of five variables",
+    "category": "Basic Input / Output",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    float a, b, c, d, e, average;\n    printf(\"Enter five numbers: \");\n    scanf(\"%f%f%f%f%f\", &a, &b, &c, &d, &e);\n    average = (a + b + c + d + e) / 5;\n    printf(\"Average = %.2f\\n\", average);\n    return 0;\n}",
+    "output": "Enter five numbers: 10 20 30 40 50\nAverage = 30.00"
+  },
+  {
+    "n": 3,
+    "title": "Area of circle, rectangle and square",
+    "category": "Basic Calculations",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    float r, l, b, s;\n    printf(\"Enter radius of circle: \");\n    scanf(\"%f\", &r);\n    printf(\"Area of circle = %.2f\\n\", 3.14159 * r * r);\n    printf(\"Enter length and breadth of rectangle: \");\n    scanf(\"%f%f\", &l, &b);\n    printf(\"Area of rectangle = %.2f\\n\", l * b);\n    printf(\"Enter side of square: \");\n    scanf(\"%f\", &s);\n    printf(\"Area of square = %.2f\\n\", s * s);\n    return 0;\n}",
+    "output": "Enter radius of circle: 7\nArea of circle = 153.94\nEnter length and breadth of rectangle: 5 4\nArea of rectangle = 20.00\nEnter side of square: 6\nArea of square = 36.00"
+  },
+  {
+    "n": 4,
+    "title": "Convert years into minutes",
+    "category": "Basic Calculations",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int years;\n    long minutes;\n    printf(\"Enter years: \");\n    scanf(\"%d\", &years);\n    minutes = (long)years * 365 * 24 * 60;\n    printf(\"Minutes = %ld\\n\", minutes);\n    return 0;\n}",
+    "output": "Enter years: 2\nMinutes = 1051200\n(Using 365 days per year)"
+  },
+  {
+    "n": 5,
+    "title": "All arithmetic operations in one program",
+    "category": "Operators",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int a, b;\n    printf(\"Enter two integers: \");\n    scanf(\"%d%d\", &a, &b);\n    printf(\"Addition = %d\\n\", a + b);\n    printf(\"Subtraction = %d\\n\", a - b);\n    printf(\"Multiplication = %d\\n\", a * b);\n    if (b != 0)\n    {\n        printf(\"Division = %.2f\\n\", (float)a / b);\n        printf(\"Remainder = %d\\n\", a % b);\n    }\n    else\n        printf(\"Division and remainder are not possible with zero.\\n\");\n    return 0;\n}",
+    "output": "Enter two integers: 15 4\nAddition = 19\nSubtraction = 11\nMultiplication = 60\nDivision = 3.75\nRemainder = 3"
+  },
+  {
+    "n": 6,
+    "title": "Print a character entered by user",
+    "category": "Character Input",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    char ch;\n    printf(\"Enter a character: \");\n    scanf(\" %c\", &ch);\n    printf(\"Entered character = %c\\n\", ch);\n    return 0;\n}",
+    "output": "Enter a character: K\nEntered character = K"
+  },
+  {
+    "n": 7,
+    "title": "Convert lowercase letter to uppercase",
+    "category": "Character Input",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    char ch;\n    printf(\"Enter a lowercase letter: \");\n    scanf(\" %c\", &ch);\n    if (ch >= 'a' && ch <= 'z')\n        ch = ch - 32;\n    printf(\"Uppercase character = %c\\n\", ch);\n    return 0;\n}",
+    "output": "Enter a lowercase letter: g\nUppercase character = G"
+  },
+  {
+    "n": 8,
+    "title": "Swap two variables using a third variable",
+    "category": "Variables",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int a, b, temp;\n    printf(\"Enter two numbers: \");\n    scanf(\"%d%d\", &a, &b);\n    temp = a;\n    a = b;\n    b = temp;\n    printf(\"After swapping: a = %d, b = %d\\n\", a, b);\n    return 0;\n}",
+    "output": "Enter two numbers: 10 20\nAfter swapping: a = 20, b = 10"
+  },
+  {
+    "n": 9,
+    "title": "Swap two variables without a third variable",
+    "category": "Variables",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int a, b;\n    printf(\"Enter two numbers: \");\n    scanf(\"%d%d\", &a, &b);\n    a = a + b;\n    b = a - b;\n    a = a - b;\n    printf(\"After swapping: a = %d, b = %d\\n\", a, b);\n    return 0;\n}",
+    "output": "Enter two numbers: 10 20\nAfter swapping: a = 20, b = 10"
+  },
+  {
+    "n": 10,
+    "title": "Maximum and minimum using conditional operator",
+    "category": "Operators",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int a, b, maximum, minimum;\n    printf(\"Enter two numbers: \");\n    scanf(\"%d%d\", &a, &b);\n    maximum = (a > b) ? a : b;\n    minimum = (a < b) ? a : b;\n    printf(\"Maximum = %d\\nMinimum = %d\\n\", maximum, minimum);\n    return 0;\n}",
+    "output": "Enter two numbers: 12 7\nMaximum = 12\nMinimum = 7"
+  },
+  {
+    "n": 11,
+    "title": "Demonstrate bitwise operators",
+    "category": "Operators",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int a = 5, b = 3;\n    printf(\"a & b = %d\\n\", a & b);\n    printf(\"a | b = %d\\n\", a | b);\n    printf(\"a ^ b = %d\\n\", a ^ b);\n    printf(\"~a = %d\\n\", ~a);\n    printf(\"a << 1 = %d\\n\", a << 1);\n    printf(\"a >> 1 = %d\\n\", a >> 1);\n    return 0;\n}",
+    "output": "a & b = 1\na | b = 7\na ^ b = 6\n~a = -6\na << 1 = 10\na >> 1 = 2"
+  },
+  {
+    "n": 12,
+    "title": "Check odd or even using if-else",
+    "category": "Decision Making",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int n;\n    printf(\"Enter an integer: \");\n    scanf(\"%d\", &n);\n    if (n % 2 == 0)\n        printf(\"Even number\\n\");\n    else\n        printf(\"Odd number\\n\");\n    return 0;\n}",
+    "output": "Enter an integer: 8\nEven number"
+  },
+  {
+    "n": 13,
+    "title": "Check alphabet, digit or special symbol",
+    "category": "Character Conditions",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    char ch;\n    printf(\"Enter a character: \");\n    scanf(\" %c\", &ch);\n    if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))\n        printf(\"Alphabet\\n\");\n    else if (ch >= '0' && ch <= '9')\n        printf(\"Digit\\n\");\n    else\n        printf(\"Special symbol\\n\");\n    return 0;\n}",
+    "output": "Enter a character: @\nSpecial symbol"
+  },
+  {
+    "n": 14,
+    "title": "Check whether a year is a leap year",
+    "category": "Decision Making",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int year;\n    printf(\"Enter year: \");\n    scanf(\"%d\", &year);\n    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))\n        printf(\"Leap year\\n\");\n    else\n        printf(\"Not a leap year\\n\");\n    return 0;\n}",
+    "output": "Enter year: 2024\nLeap year"
+  },
+  {
+    "n": 15,
+    "title": "Find days in a month using switch case",
+    "category": "Switch Case",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int month, year;\n    printf(\"Enter month (1-12) and year: \");\n    scanf(\"%d%d\", &month, &year);\n    switch (month)\n    {\n        case 1: case 3: case 5: case 7: case 8: case 10: case 12:\n            printf(\"31 days\\n\"); break;\n        case 4: case 6: case 9: case 11:\n            printf(\"30 days\\n\"); break;\n        case 2:\n            if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))\n                printf(\"29 days\\n\");\n            else\n                printf(\"28 days\\n\");\n            break;\n        default: printf(\"Invalid month\\n\");\n    }\n    return 0;\n}",
+    "output": "Enter month (1-12) and year: 2 2024\n29 days"
+  },
+  {
+    "n": 16,
+    "title": "Check vowel or consonant using switch",
+    "category": "Switch Case",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    char ch;\n    printf(\"Enter an alphabet: \");\n    scanf(\" %c\", &ch);\n    switch (ch)\n    {\n        case 'a': case 'e': case 'i': case 'o': case 'u':\n        case 'A': case 'E': case 'I': case 'O': case 'U':\n            printf(\"Vowel\\n\"); break;\n        default:\n            if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))\n                printf(\"Consonant\\n\");\n            else\n                printf(\"Not an alphabet\\n\");\n    }\n    return 0;\n}",
+    "output": "Enter an alphabet: e\nVowel"
+  },
+  {
+    "n": 17,
+    "title": "Find maximum among three numbers",
+    "category": "Decision Making",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int a, b, c, max;\n    printf(\"Enter three numbers: \");\n    scanf(\"%d%d%d\", &a, &b, &c);\n    max = a;\n    if (b > max) max = b;\n    if (c > max) max = c;\n    printf(\"Maximum = %d\\n\", max);\n    return 0;\n}",
+    "output": "Enter three numbers: 12 45 21\nMaximum = 45"
+  },
+  {
+    "n": 18,
+    "title": "Calculate grade from given marks",
+    "category": "Decision Making",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    float marks;\n    printf(\"Enter marks (0-100): \");\n    scanf(\"%f\", &marks);\n    if (marks < 0 || marks > 100)\n        printf(\"Invalid marks\\n\");\n    else if (marks >= 90) printf(\"Grade A+\\n\");\n    else if (marks >= 80) printf(\"Grade A\\n\");\n    else if (marks >= 70) printf(\"Grade B\\n\");\n    else if (marks >= 60) printf(\"Grade C\\n\");\n    else if (marks >= 50) printf(\"Grade D\\n\");\n    else printf(\"Grade F\\n\");\n    return 0;\n}",
+    "output": "Enter marks (0-100): 86\nGrade A"
+  },
+  {
+    "n": 19,
+    "title": "Print first 10 integers using goto",
+    "category": "goto Statement",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int i = 1;\nstart:\n    if (i <= 10)\n    {\n        printf(\"%d \", i);\n        i++;\n        goto start;\n    }\n    return 0;\n}",
+    "output": "1 2 3 4 5 6 7 8 9 10"
+  },
+  {
+    "n": 20,
+    "title": "Addition of first n numbers using goto",
+    "category": "goto Statement",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int n, i = 1, sum = 0;\n    printf(\"Enter n: \");\n    scanf(\"%d\", &n);\nagain:\n    if (i <= n)\n    {\n        sum += i;\n        i++;\n        goto again;\n    }\n    printf(\"Sum = %d\\n\", sum);\n    return 0;\n}",
+    "output": "Enter n: 5\nSum = 15"
+  },
+  {
+    "n": 21,
+    "title": "Reverse a given number",
+    "category": "Loops",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int n, digit, reverse = 0;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &n);\n    while (n != 0)\n    {\n        digit = n % 10;\n        reverse = reverse * 10 + digit;\n        n /= 10;\n    }\n    printf(\"Reverse = %d\\n\", reverse);\n    return 0;\n}",
+    "output": "Enter a number: 132\nReverse = 231"
+  },
+  {
+    "n": 22,
+    "title": "Check whether a number is Armstrong",
+    "category": "Loops",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int n, original, digit, sum = 0;\n    printf(\"Enter a three-digit number: \");\n    scanf(\"%d\", &n);\n    original = n;\n    while (n != 0)\n    {\n        digit = n % 10;\n        sum += digit * digit * digit;\n        n /= 10;\n    }\n    if (sum == original) printf(\"Armstrong number\\n\");\n    else printf(\"Not an Armstrong number\\n\");\n    return 0;\n}",
+    "output": "Enter a three-digit number: 153\nArmstrong number"
+  },
+  {
+    "n": 23,
+    "title": "Check whether a number is palindrome",
+    "category": "Loops",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int n, original, digit, reverse = 0;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &n);\n    original = n;\n    while (n > 0)\n    {\n        digit = n % 10;\n        reverse = reverse * 10 + digit;\n        n /= 10;\n    }\n    if (original == reverse) printf(\"Palindrome number\\n\");\n    else printf(\"Not a palindrome number\\n\");\n    return 0;\n}",
+    "output": "Enter a number: 121\nPalindrome number"
+  },
+  {
+    "n": 24,
+    "title": "Factorial of a given number",
+    "category": "Loops",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int n, i;\n    unsigned long long fact = 1;\n    printf(\"Enter a number (0-20): \");\n    scanf(\"%d\", &n);\n    if (n < 0 || n > 20)\n        printf(\"Enter a value from 0 to 20.\\n\");\n    else\n    {\n        for (i = 1; i <= n; i++) fact *= i;\n        printf(\"Factorial = %llu\\n\", fact);\n    }\n    return 0;\n}",
+    "output": "Enter a number (0-20): 5\nFactorial = 120"
+  },
+  {
+    "n": 25,
+    "title": "Check whether a number is prime",
+    "category": "Loops",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int n, i, prime = 1;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &n);\n    if (n < 2) prime = 0;\n    for (i = 2; i <= n / i; i++)\n        if (n % i == 0) { prime = 0; break; }\n    if (prime) printf(\"Prime number\\n\");\n    else printf(\"Not a prime number\\n\");\n    return 0;\n}",
+    "output": "Enter a number: 17\nPrime number"
+  },
+  {
+    "n": 26,
+    "title": "Print different patterns using for loop",
+    "category": "Patterns",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int i, j;\n    printf(\"Pattern 1\\n\");\n    for (i = 1; i <= 5; i++)\n    {\n        for (j = 1; j <= i; j++) printf(\"* \");\n        printf(\"\\n\");\n    }\n    printf(\"Pattern 2\\n\");\n    for (i = 5; i >= 1; i--)\n    {\n        for (j = 1; j <= i; j++) printf(\"* \");\n        printf(\"\\n\");\n    }\n    return 0;\n}",
+    "output": "Pattern 1\n*\n* *\n* * *\n* * * *\n* * * * *\nPattern 2\n* * * * *\n* * * *\n* * *\n* *\n*"
+  },
+  {
+    "n": 27,
+    "title": "Print numbers 1 to 5 using array",
+    "category": "Arrays",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int a[5] = {1, 2, 3, 4, 5}, i;\n    for (i = 0; i < 5; i++)\n        printf(\"%d \", a[i]);\n    return 0;\n}",
+    "output": "1 2 3 4 5"
+  },
+  {
+    "n": 28,
+    "title": "Print numbers 1 to 5 in reverse using array",
+    "category": "Arrays",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int a[5] = {1, 2, 3, 4, 5}, i;\n    for (i = 4; i >= 0; i--)\n        printf(\"%d \", a[i]);\n    return 0;\n}",
+    "output": "5 4 3 2 1"
+  },
+  {
+    "n": 29,
+    "title": "Find sum and average of five numbers",
+    "category": "Arrays",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int a[5], i, sum = 0;\n    float average;\n    printf(\"Enter five numbers: \");\n    for (i = 0; i < 5; i++) scanf(\"%d\", &a[i]);\n    for (i = 0; i < 5; i++) sum += a[i];\n    average = sum / 5.0f;\n    printf(\"Sum = %d\\nAverage = %.2f\\n\", sum, average);\n    return 0;\n}",
+    "output": "Enter five numbers: 2 4 6 8 10\nSum = 30\nAverage = 6.00"
+  },
+  {
+    "n": 30,
+    "title": "Find maximum and minimum in an array",
+    "category": "Arrays",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int a[5], i, max, min;\n    printf(\"Enter five numbers: \");\n    for (i = 0; i < 5; i++) scanf(\"%d\", &a[i]);\n    max = min = a[0];\n    for (i = 1; i < 5; i++)\n    {\n        if (a[i] > max) max = a[i];\n        if (a[i] < min) min = a[i];\n    }\n    printf(\"Maximum = %d\\nMinimum = %d\\n\", max, min);\n    return 0;\n}",
+    "output": "Enter five numbers: 8 2 14 5 9\nMaximum = 14\nMinimum = 2"
+  },
+  {
+    "n": 31,
+    "title": "Count positive, negative and zero values in array",
+    "category": "Arrays",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int a[5], i, positive = 0, negative = 0, zero = 0;\n    printf(\"Enter five numbers: \");\n    for (i = 0; i < 5; i++) scanf(\"%d\", &a[i]);\n    for (i = 0; i < 5; i++)\n    {\n        if (a[i] > 0) positive++;\n        else if (a[i] < 0) negative++;\n        else zero++;\n    }\n    printf(\"Positive = %d\\nNegative = %d\\nZero = %d\\n\", positive, negative, zero);\n    return 0;\n}",
+    "output": "Enter five numbers: 3 -2 0 7 -1\nPositive = 2\nNegative = 2\nZero = 1"
+  },
+  {
+    "n": 32,
+    "title": "Count odd and even values in an array",
+    "category": "Arrays",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int a[5], i, odd = 0, even = 0;\n    printf(\"Enter five numbers: \");\n    for (i = 0; i < 5; i++) scanf(\"%d\", &a[i]);\n    for (i = 0; i < 5; i++)\n    {\n        if (a[i] % 2 == 0) even++;\n        else odd++;\n    }\n    printf(\"Even = %d\\nOdd = %d\\n\", even, odd);\n    return 0;\n}",
+    "output": "Enter five numbers: 1 2 3 4 6\nEven = 3\nOdd = 2"
+  },
+  {
+    "n": 33,
+    "title": "Sort n numbers using array",
+    "category": "Arrays",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int a[100], n, i, j, temp;\n    printf(\"Enter number of elements (1-100): \");\n    scanf(\"%d\", &n);\n    if (n < 1 || n > 100) return 0;\n    printf(\"Enter %d numbers: \", n);\n    for (i = 0; i < n; i++) scanf(\"%d\", &a[i]);\n    for (i = 0; i < n - 1; i++)\n        for (j = 0; j < n - i - 1; j++)\n            if (a[j] > a[j + 1])\n            { temp = a[j]; a[j] = a[j + 1]; a[j + 1] = temp; }\n    printf(\"Sorted array: \");\n    for (i = 0; i < n; i++) printf(\"%d \", a[i]);\n    return 0;\n}",
+    "output": "Enter number of elements (1-100): 5\nEnter 5 numbers: 5 1 4 2 3\nSorted array: 1 2 3 4 5"
+  },
+  {
+    "n": 34,
+    "title": "Read matrix and display original and transpose",
+    "category": "2D Arrays",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    int a[10][10], r, c, i, j;\n    printf(\"Enter rows and columns (max 10): \");\n    scanf(\"%d%d\", &r, &c);\n    if (r < 1 || r > 10 || c < 1 || c > 10) return 0;\n    printf(\"Enter matrix elements: \");\n    for (i = 0; i < r; i++)\n        for (j = 0; j < c; j++) scanf(\"%d\", &a[i][j]);\n    printf(\"Original matrix:\\n\");\n    for (i = 0; i < r; i++)\n    {\n        for (j = 0; j < c; j++) printf(\"%d \", a[i][j]);\n        printf(\"\\n\");\n    }\n    printf(\"Transpose matrix:\\n\");\n    for (j = 0; j < c; j++)\n    {\n        for (i = 0; i < r; i++) printf(\"%d \", a[i][j]);\n        printf(\"\\n\");\n    }\n    return 0;\n}",
+    "output": "Enter rows and columns (max 10): 2 3\nEnter matrix elements: 1 2 3 4 5 6\nOriginal matrix:\n1 2 3\n4 5 6\nTranspose matrix:\n1 4\n2 5\n3 6"
+  },
+  {
+    "n": 35,
+    "title": "Copy one string to another string",
+    "category": "Strings",
+    "code": "#include <stdio.h>\n#include <string.h>\n\nint main()\n{\n    char source[100], destination[100];\n    printf(\"Enter a string: \");\n    fgets(source, sizeof(source), stdin);\n    source[strcspn(source, \"\\n\")] = '\\0';\n    strcpy(destination, source);\n    printf(\"Copied string = %s\\n\", destination);\n    return 0;\n}",
+    "output": "Enter a string: Hello C\nCopied string = Hello C"
+  },
+  {
+    "n": 36,
+    "title": "Concatenate two strings",
+    "category": "Strings",
+    "code": "#include <stdio.h>\n#include <string.h>\n\nint main()\n{\n    char first[200], second[100];\n    printf(\"Enter first string: \");\n    fgets(first, sizeof(first), stdin);\n    first[strcspn(first, \"\\n\")] = '\\0';\n    printf(\"Enter second string: \");\n    fgets(second, sizeof(second), stdin);\n    second[strcspn(second, \"\\n\")] = '\\0';\n    strcat(first, second);\n    printf(\"Concatenated string = %s\\n\", first);\n    return 0;\n}",
+    "output": "Enter first string: Hello\nEnter second string: World\nConcatenated string = HelloWorld"
+  },
+  {
+    "n": 37,
+    "title": "Find length of a given string",
+    "category": "Strings",
+    "code": "#include <stdio.h>\n#include <string.h>\n\nint main()\n{\n    char str[100];\n    printf(\"Enter a string: \");\n    fgets(str, sizeof(str), stdin);\n    str[strcspn(str, \"\\n\")] = '\\0';\n    printf(\"Length = %lu\\n\", (unsigned long)strlen(str));\n    return 0;\n}",
+    "output": "Enter a string: Mechanical\nLength = 10"
+  },
+  {
+    "n": 38,
+    "title": "Find string length without string function",
+    "category": "Strings",
+    "code": "#include <stdio.h>\n\nint main()\n{\n    char str[100];\n    int i = 0;\n    printf(\"Enter a string: \");\n    fgets(str, sizeof(str), stdin);\n    while (str[i] != '\\0' && str[i] != '\\n') i++;\n    printf(\"Length = %d\\n\", i);\n    return 0;\n}",
+    "output": "Enter a string: Hello C\nLength = 7"
+  }
+];
+const categories = ['All', ...new Set(programs.map(p => p.category))];
+const grid = document.getElementById('programGrid');
+const filters = document.getElementById('filters');
+const searchInput = document.getElementById('searchInput');
+const resultsCount = document.getElementById('resultsCount');
+const emptyState = document.getElementById('emptyState');
+const toast = document.getElementById('toast');
+let activeCategory = 'All';
+let toastTimer;
+
+document.getElementById('totalMetric').textContent = programs.length;
+document.querySelector('.hero-metrics .metric:nth-child(2) strong').textContent = `01–${String(programs.length).padStart(2,'0')}`;
+
+function showToast(message) {
+  toast.textContent = message;
+  toast.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove('show'), 2100);
+}
+
+function escapeHTML(value) {
+  return String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+}
+
+function renderFilters() {
+  filters.innerHTML = '';
+  categories.forEach(category => {
+    const button = document.createElement('button');
+    button.className = 'filter-btn' + (category === activeCategory ? ' active' : '');
+    button.textContent = category;
+    button.type = 'button';
+    button.setAttribute('aria-pressed', String(category === activeCategory));
+    button.addEventListener('click', () => {
+      activeCategory = category;
+      renderFilters();
+      renderPrograms();
+    });
+    filters.appendChild(button);
+  });
+}
+
+function cardTemplate(program, index) {
+  return `<article class="program-card glass" data-program="${program.n}" style="animation-delay:${Math.min(index * 25, 250)}ms">
+    <div class="card-head">
+      <div class="card-title-wrap">
+        <div class="number-chip">${String(program.n).padStart(2,'0')}</div>
+        <div><h3 class="card-title">${escapeHTML(program.title)}</h3><div class="category">${escapeHTML(program.category)}</div></div>
+      </div>
+      <button class="copy-btn" type="button" data-copy="${program.n}" aria-label="Copy program ${program.n} code">Copy code ⧉</button>
+    </div>
+    <div class="code-window"><div class="code-top"><span class="traffic"><i></i><i></i><i></i></span><span>program_${String(program.n).padStart(2,'0')}.c</span><span>C · source</span></div><pre><code>${escapeHTML(program.code)}</code></pre></div>
+    <div class="card-foot"><button class="output-btn" type="button" data-output="${program.n}" aria-expanded="false">▶ Show sample output</button><span class="note">Example run</span><div class="output-panel" id="output-${program.n}"><div class="output-label">Sample output · illustrative</div><pre>${escapeHTML(program.output)}</pre></div></div>
+  </article>`;
+}
+
+function renderPrograms() {
+  const query = searchInput.value.trim().toLowerCase();
+  const visible = programs.filter(program => {
+    const matchesCategory = activeCategory === 'All' || program.category === activeCategory;
+    const haystack = `${program.n} ${program.title} ${program.category} ${program.code}`.toLowerCase();
+    return matchesCategory && haystack.includes(query);
+  });
+  grid.innerHTML = visible.map(cardTemplate).join('');
+  resultsCount.textContent = `${visible.length} program${visible.length === 1 ? '' : 's'}`;
+  emptyState.classList.toggle('show', visible.length === 0);
+  grid.style.display = visible.length ? 'grid' : 'none';
+}
+
+async function copyProgram(number) {
+  const program = programs.find(item => item.n === Number(number));
+  if (!program) return;
+  try {
+    await navigator.clipboard.writeText(program.code);
+    showToast(`Program ${number} copied to clipboard`);
+  } catch (error) {
+    const temporary = document.createElement('textarea');
+    temporary.value = program.code;
+    temporary.style.position = 'fixed';
+    temporary.style.opacity = '0';
+    document.body.appendChild(temporary);
+    temporary.select();
+    const copied = document.execCommand('copy');
+    temporary.remove();
+    showToast(copied ? `Program ${number} copied to clipboard` : 'Copy was blocked by this browser');
+  }
+}
+
+function setOutput(number, shouldOpen) {
+  const panel = document.getElementById(`output-${number}`);
+  const button = document.querySelector(`[data-output="${number}"]`);
+  if (!panel || !button) return;
+  panel.classList.toggle('open', shouldOpen);
+  button.setAttribute('aria-expanded', String(shouldOpen));
+  button.textContent = shouldOpen ? '▼ Hide sample output' : '▶ Show sample output';
+}
+
+grid.addEventListener('click', event => {
+  const copyButton = event.target.closest('[data-copy]');
+  const outputButton = event.target.closest('[data-output]');
+  if (copyButton) copyProgram(copyButton.dataset.copy);
+  if (outputButton) {
+    const number = outputButton.dataset.output;
+    const panel = document.getElementById(`output-${number}`);
+    setOutput(number, !panel.classList.contains('open'));
+  }
+});
+
+searchInput.addEventListener('input', renderPrograms);
+document.getElementById('clearSearch').addEventListener('click', () => {
+  searchInput.value = '';
+  activeCategory = 'All';
+  renderFilters();
+  renderPrograms();
+  searchInput.focus();
+});
+document.getElementById('expandAll').addEventListener('click', () => {
+  document.querySelectorAll('[data-output]').forEach(button => setOutput(button.dataset.output, true));
+});
+document.getElementById('collapseAll').addEventListener('click', () => {
+  document.querySelectorAll('[data-output]').forEach(button => setOutput(button.dataset.output, false));
+});
+
+// Export every listed practical as a single plain-text file; source strings remain untouched.
+document.getElementById('downloadAll').addEventListener('click', () => {
+  const bundle = programs.map(program => `/* PRACTICAL ${program.n}: ${program.title} */\n${program.code}`).join('\n\n' + '='.repeat(68) + '\n\n');
+  const blob = new Blob([bundle + '\n'], { type: 'text/plain;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'c-practical-programs.txt';
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  showToast(`Downloaded ${programs.length} practical programs`);
+});
+
+const backTopFab = document.getElementById('backTopFab');
+window.addEventListener('scroll', () => backTopFab.classList.toggle('visible', window.scrollY > 480), { passive:true });
+backTopFab.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+const modal = document.getElementById('helpModal');
+document.getElementById('helpBtn').addEventListener('click', () => modal.classList.add('open'));
+document.getElementById('closeHelp').addEventListener('click', () => modal.classList.remove('open'));
+modal.addEventListener('click', event => { if (event.target === modal) modal.classList.remove('open'); });
+document.addEventListener('keydown', event => {
+  if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
+    event.preventDefault();
+    searchInput.focus();
+  }
+  if (event.key === 'Escape') modal.classList.remove('open');
+});
+
+
+
+// Motion layer: UI-only enhancements. The C program strings above are untouched.
+(function addMotionLayer(){
+  const progress = document.createElement('div');
+  progress.className = 'scroll-progress';
+  progress.setAttribute('aria-hidden','true');
+  progress.innerHTML = '<span></span>';
+  document.body.appendChild(progress);
+  ['one','two'].forEach(name => { const orb=document.createElement('div'); orb.className='ambient-orb orb-'+name; orb.setAttribute('aria-hidden','true'); document.body.appendChild(orb); });
+  const topButton=document.createElement('button');
+  topButton.className='back-top-fab'; topButton.type='button'; topButton.setAttribute('aria-label','Back to top'); topButton.title='Back to top'; topButton.textContent='↑';
+  topButton.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+  document.body.appendChild(topButton);
+  let ticking=false;
+  function updateScroll(){
+    const max=document.documentElement.scrollHeight-window.innerHeight;
+    const pct=max>0?(window.scrollY/max)*100:0;
+    document.documentElement.style.setProperty('--scroll-progress',pct+'%');
+    topButton.classList.toggle('visible',window.scrollY>500);
+    ticking=false;
+  }
+  window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(updateScroll);ticking=true;}},{passive:true});
+  window.addEventListener('resize',updateScroll,{passive:true}); updateScroll();
+  window.addEventListener('pointermove',event=>{
+    if(event.pointerType==='touch') return;
+    document.documentElement.style.setProperty('--mx',event.clientX+'px');
+    document.documentElement.style.setProperty('--my',event.clientY+'px');
+  },{passive:true});
+  const revealObserver = ('IntersectionObserver' in window) ? new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-revealed');entry.target.classList.remove('is-hidden-reveal');revealObserver.unobserve(entry.target);}});
+  },{threshold:.08,rootMargin:'0px 0px -35px 0px'}) : null;
+  function prepareCards(){
+    document.querySelectorAll('.program-card:not([data-motion-ready])').forEach((card,index)=>{
+      card.dataset.motionReady='true';
+      card.style.animationDelay=Math.min(index%8,7)*45+'ms';
+      if(revealObserver){card.classList.add('is-hidden-reveal');revealObserver.observe(card);}else card.classList.add('is-revealed');
+    });
+  }
+  const grid=document.getElementById('programGrid');
+  if(grid){prepareCards();new MutationObserver(()=>prepareCards()).observe(grid,{childList:true});}
+  document.querySelectorAll('.hero,.toolbar,.filters,.section-heading,.footer').forEach(el=>el.classList.add('reveal-section'));
+  if('IntersectionObserver' in window){const sectionObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('in-view');sectionObserver.unobserve(entry.target);}}),{threshold:.05});document.querySelectorAll('.reveal-section').forEach(el=>sectionObserver.observe(el));}
+})();
+
+
+renderFilters();
+renderPrograms();
+</script>
+</body>
+</html>
